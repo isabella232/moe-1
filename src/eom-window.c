@@ -2448,9 +2448,9 @@ eom_window_cmd_close_window (GtkAction *action, gpointer user_data)
 		eom_window_finish_saving (window);
 	}
 
-	if (!eom_window_unsaved_images_confirm (window)) {
+	//if (!eom_window_unsaved_images_confirm (window)) {
 		gtk_widget_destroy (GTK_WIDGET (user_data));
-	}
+        //}
 }
 
 static void
