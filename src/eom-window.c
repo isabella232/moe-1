@@ -2195,7 +2195,7 @@ eom_window_stop_fullscreen (EomWindow *window, gboolean slideshow)
 
 	menubar = gtk_ui_manager_get_widget (priv->ui_mgr, "/MainMenu");
 	g_assert (GTK_IS_WIDGET (menubar));
-	gtk_widget_show (menubar);
+	//gtk_widget_show (menubar);
 
 	eom_scroll_view_set_zoom_upscale (EOM_SCROLL_VIEW (priv->view), FALSE);
 
@@ -4494,7 +4494,7 @@ eom_window_construct_ui (EomWindow *window)
 	menubar = gtk_ui_manager_get_widget (priv->ui_mgr, "/MainMenu");
 	g_assert (GTK_IS_WIDGET (menubar));
 	gtk_box_pack_start (GTK_BOX (priv->box), menubar, FALSE, FALSE, 0);
-	gtk_widget_show (menubar);
+        gtk_widget_hide (menubar); // look ma, no menubar!
 
 	menuitem = gtk_ui_manager_get_widget (priv->ui_mgr,
 			"/MainMenu/Edit/EditFlipHorizontal");
