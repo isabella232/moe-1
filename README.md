@@ -1,6 +1,6 @@
 # moe
 
-A fork of the eom image viewer (1.23.0).
+A fork of the [eom](https://github.com/mate-desktop/eom) image viewer (1.23.0).
 
 ## How to build
 
