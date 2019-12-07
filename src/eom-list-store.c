@@ -476,8 +476,7 @@ directory_visit (GFile *directory,
 	name = g_file_info_get_name (children_info);
 
 	if (!g_str_has_prefix (name, ".")) {
-		/* We support opening any image type, so let eom to add any images in the current directory to the store */
-		if (g_content_type_is_mime_type (mime_type, "image/*") || eom_image_is_supported_mime_type (mime_type)) {
+		if (eom_image_is_supported_mime_type (mime_type)) {
 			load_uri = TRUE;
 		}
 	}
